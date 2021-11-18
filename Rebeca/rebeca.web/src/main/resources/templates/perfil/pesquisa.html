@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{base.html}">
+
+<head>
+    <title>Pesquisa</title>
+</head>
+
+<body>
+    <header layout:fragment="header">
+        <h1>Pesquisa</h1>
+    </header>
+    <section layout:fragment="custom-content">
+
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-sm-3 my-1">
+                <label class="sr-only" for="inlineFormInputGroupUsername">Usuário</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Usuário">
+                </div>
+              </div>
+              <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Adicionar</button>
+              </div>
+            </div>
+          </form>
+
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Primeiro</th>
+                    <th scope="col">Último</th>
+                    <th scope="col">Nickname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
